@@ -31,7 +31,7 @@ final class ViewController: UIViewController {
     }
     
     @objc
-    func refresh() {
+    private func refresh() {
         model.sortedBy(sortTypeView.currentSortType,
                        sortSide: sortTypeView.currentSortSide)
         refreshControl.endRefreshing()
